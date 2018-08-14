@@ -1,0 +1,5 @@
+rootProject.name = 'Example'
+include ':@blankapp_plugin-progresshud'
+project(':@blankapp_plugin-progresshud').projectDir = new File(rootProject.projectDir, '../node_modules/@blankapp/plugin-progresshud/android')
+
+include ':app'

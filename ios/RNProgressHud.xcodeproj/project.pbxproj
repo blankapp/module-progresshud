@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNProgressHud.m */; };
+		F5CBBAF42123BA5900239403 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CBBAEA2123BA5900239403 /* SVRadialGradientLayer.m */; };
+		F5CBBAF52123BA5900239403 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CBBAED2123BA5900239403 /* SVProgressAnimatedView.m */; };
+		F5CBBAF62123BA5900239403 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CBBAF02123BA5900239403 /* SVProgressHUD.m */; };
+		F5CBBAF72123BA5900239403 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CBBAF12123BA5900239403 /* SVIndefiniteAnimatedView.m */; };
+		F5CBBAF82123BA5900239403 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5CBBAF22123BA5900239403 /* SVProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +31,16 @@
 		134814201AA4EA6300B7C361 /* libRNProgressHud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNProgressHud.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNProgressHud.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNProgressHud.m; sourceTree = "<group>"; };
+		F5CBBAEA2123BA5900239403 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		F5CBBAEB2123BA5900239403 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		F5CBBAEC2123BA5900239403 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		F5CBBAED2123BA5900239403 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		F5CBBAEE2123BA5900239403 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		F5CBBAEF2123BA5900239403 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		F5CBBAF02123BA5900239403 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		F5CBBAF12123BA5900239403 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		F5CBBAF22123BA5900239403 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		F5CBBAF32123BA5900239403 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +65,28 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				F5CBBAE92123BA5900239403 /* SVProgressHUD */,
 				B3E7B5881CC2AC0600A0062D /* RNProgressHud.h */,
 				B3E7B5891CC2AC0600A0062D /* RNProgressHud.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		F5CBBAE92123BA5900239403 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F5CBBAEA2123BA5900239403 /* SVRadialGradientLayer.m */,
+				F5CBBAEB2123BA5900239403 /* SVIndefiniteAnimatedView.h */,
+				F5CBBAEC2123BA5900239403 /* SVProgressHUD.h */,
+				F5CBBAED2123BA5900239403 /* SVProgressAnimatedView.m */,
+				F5CBBAEE2123BA5900239403 /* SVProgressHUD-Prefix.pch */,
+				F5CBBAEF2123BA5900239403 /* SVRadialGradientLayer.h */,
+				F5CBBAF02123BA5900239403 /* SVProgressHUD.m */,
+				F5CBBAF12123BA5900239403 /* SVIndefiniteAnimatedView.m */,
+				F5CBBAF22123BA5900239403 /* SVProgressHUD.bundle */,
+				F5CBBAF32123BA5900239403 /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CBBAF82123BA5900239403 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CBBAF72123BA5900239403 /* SVIndefiniteAnimatedView.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNProgressHud.m in Sources */,
+				F5CBBAF62123BA5900239403 /* SVProgressHUD.m in Sources */,
+				F5CBBAF42123BA5900239403 /* SVRadialGradientLayer.m in Sources */,
+				F5CBBAF52123BA5900239403 /* SVProgressAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

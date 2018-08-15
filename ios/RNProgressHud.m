@@ -1,5 +1,9 @@
 #import "RNProgressHud.h"
-#import "SVProgressHUD/SVProgressHUD.h"
+#if __has_include("SVProgressHUD.h")
+#import "SVProgressHUD.h"
+#else
+#import <SVProgressHUD/SVProgressHUD.h>
+#endif
 
 @implementation RNProgressHud
 

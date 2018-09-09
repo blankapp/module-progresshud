@@ -28,6 +28,7 @@ public class RNProgressHudModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void show(String status) {
+        dismiss(0);
         hud = KProgressHUD.create(getCurrentActivity());
         if (status != null && !status.isEmpty()) {
             hud.setLabel(status);
@@ -37,6 +38,7 @@ public class RNProgressHudModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void showInfo(String status) {
+        dismiss(0);
         ImageView imageView = new ImageView(getCurrentActivity());
         imageView.setBackgroundResource(R.mipmap.info);
 
@@ -48,6 +50,7 @@ public class RNProgressHudModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void showSuccess(String status) {
+        dismiss(0);
         ImageView imageView = new ImageView(getCurrentActivity());
         imageView.setBackgroundResource(R.mipmap.success);
 
@@ -59,6 +62,7 @@ public class RNProgressHudModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void showError(String status) {
+        dismiss(0);
         ImageView imageView = new ImageView(getCurrentActivity());
         imageView.setBackgroundResource(R.mipmap.error);
 
@@ -85,17 +89,22 @@ public class RNProgressHudModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void dismiss(Integer delay) {
         int delayMillis = delay != null ? delay.intValue() : 0;
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if (hud != null) {
-                    hud.dismiss();
-                    hud = null;
-                }
+        if (delayMillis == 0) {
+            if (hud != null) {
+                hud.dismiss();
+                hud = null;
             }
-        }, delayMillis);
+        } else {
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if (hud != null) {
+                        hud.dismiss();
+                        hud = null;
+                    }
+                }
+            }, delayMillis);
+        }
     }
-
-
 }

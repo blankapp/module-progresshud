@@ -30,7 +30,7 @@ RCT_EXPORT_METHOD(showInfo:(NSString *)status)
 
 RCT_EXPORT_METHOD(showSuccess:(NSString *) status)
 {
-    [SVProgressHUD showInfoWithStatus: status];
+    [SVProgressHUD showSuccessWithStatus: status];
 }
 
 RCT_EXPORT_METHOD(showError:(NSString *) status)

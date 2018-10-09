@@ -107,6 +107,7 @@ proguard/
 captures/
 
 # IntelliJ
+.project
 *.iml
 .idea/workspace.xml
 .idea/tasks.xml

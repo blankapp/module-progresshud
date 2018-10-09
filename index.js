@@ -1,15 +1,15 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNProgressHud } = NativeModules;
+const { RNProgressHUD } = NativeModules;
 
 const ProgressHUD = {
-  ...RNProgressHud,
+  ...RNProgressHUD,
   show(status = '') {
-    RNProgressHud.show(status);
+    RNProgressHUD.show(status);
   },
   dismiss(delay = 0) {
-    RNProgressHud.dismiss(delay);
+    RNProgressHUD.dismiss(delay);
   },
 };
 

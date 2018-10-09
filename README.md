@@ -26,15 +26,15 @@ $ yarn add git+https://github.com/blankapp/plugin-progresshud
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `@blankapp/plugin-progresshud` and add `RNProgressHud.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNProgressHud.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+2. Go to `node_modules` ➜ `@blankapp/plugin-progresshud` and add `RNProgressHUD.xcodeproj`
+3. In XCode, in the project navigator, select your project. Add `libRNProgressHUD.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import org.blankapp.progresshud.RNProgressHudPackage;` to the imports at the top of the file
-  - Add `new RNProgressHudPackage()` to the list returned by the `getPackages()` method
+  - Add `import org.blankapp.progresshud.RNProgressHUDPackage;` to the imports at the top of the file
+  - Add `new RNProgressHUDPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':@blankapp/plugin-progresshud'

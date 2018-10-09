@@ -18,7 +18,14 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
 
+    this.handlePressShowProgress = this.handlePressShowProgress.bind(this);
+
+    this.progress = 0;
+  }
+  
   handlePressShow() {
     ProgressHUD.show('');
     ProgressHUD.dismiss(2000);
@@ -45,8 +52,15 @@ export default class App extends Component {
   }
 
   handlePressShowProgress() {
-    ProgressHUD.showProgress(50, 'This is progress message');
-    ProgressHUD.dismiss(2000);
+    this.showProgressTimer = setInterval(() => {
+      this.progress = (this.progress || 0) + 1;
+      ProgressHUD.showProgress(this.progress, 'This is progress message');
+      if (this.progress >= 100) {
+        clearInterval(this.showProgressTimer);
+        ProgressHUD.dismiss(0);
+        this.progress = 0;
+      }
+    }, 100)
   }
 
   render() {

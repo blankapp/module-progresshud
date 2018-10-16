@@ -47,9 +47,10 @@ $ yarn add git+https://github.com/blankapp/plugin-progresshud
 
 ## Usage
 ```javascript
-import ProgressHud from '@blankapp/plugin-progresshud';
+import ProgressHUD from '@blankapp/plugin-progresshud';
 
-ProgressHud.show();
+ProgressHUD.show();
+ProgressHUD.dismiss(1500);
 ```
 
 ## License

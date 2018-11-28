@@ -1,8 +1,8 @@
 {
   "name": "Example",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
+    "postinstall": "./scripts/postinstall.sh",
     "clean": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn install",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "node_modules/.bin/jest",
@@ -11,17 +11,14 @@
   },
   "dependencies": {
     "@blankapp/plugin-progresshud": "../",
-    "react": "16.5.0",
-    "react-native": "0.57.1"
+    "react": "16.6.1",
+    "react-native": "0.57.7"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0-beta",
-    "babel-eslint": "^8.2.6",
     "babel-jest": "23.6.0",
-    "babel-preset-react-native": "^5.0.2",
     "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.45.2",
-    "react-test-renderer": "16.5.0"
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.6.1"
   },
   "jest": {
     "preset": "react-native"

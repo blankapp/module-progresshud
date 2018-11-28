@@ -4,27 +4,29 @@ English | [简体中文](./README.zh_CN.md)
 
 ## Introduction
 
-A cross-platform ProgressHUD plugin for your React Native app.
+适用于 React Native 应用程序的 ProgressHUD 插件。
 
-### Features
+## 特性
 
 - ...
 
-## Quick Start
+## 快速开始
 
-### Installation
+### 安装
 
-Install `@blankapp/plugin-progresshud` and link in your project:
+安装 `@blankapp/plugin-progresshud` 到你的项目
 
 ```bash
 $ yarn add @blankapp/plugin-progresshud
 ```
 
-Or
+或
 
 ```
 $ yarn add git+https://github.com/blankapp/plugin-progresshud
 ```
+
+## 基本用法
 
 ```js
 import ProgressHUD from '@blankapp/plugin-progresshud';
@@ -33,7 +35,7 @@ ProgressHUD.show('Loading...');
 ProgressHUD.dismiss(1500);
 ```
 
-## License
+## 许可证
 
 ```text
 MIT License

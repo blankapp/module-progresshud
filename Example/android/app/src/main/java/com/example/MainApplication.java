@@ -8,7 +8,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
-import org.blankapp.progresshud.RNPluginProgressHUDPackage;
+import org.blankapp.plugins.progresshud.RNPluginProgressHUDPackage;
 
 import java.util.Arrays;
 import java.util.List;

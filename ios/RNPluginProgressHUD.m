@@ -12,6 +12,7 @@
     self = [super init];
     if (self) {
         [SVProgressHUD setDefaultStyle: SVProgressHUDStyleDark];
+        [SVProgressHUD setDefaultMaskType: SVProgressHUDMaskTypeClear];
     }
     return self;
 }
